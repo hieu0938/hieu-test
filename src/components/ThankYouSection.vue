@@ -4,7 +4,7 @@ import { DevicePhoneMobileIcon } from "@heroicons/vue/24/outline";
 
 <template>
   <div
-    class="flex flex-col items-center justify-center gap-10 bg-[url('hieu-test/footer-shape.png')] bg-cover bg-right-bottom py-24"
+    class="flex flex-col items-center justify-center gap-10 bg-[url('/footer-shape.png')] bg-cover bg-right-bottom py-24"
   >
     <img
       class="h-72 w-72 rounded-full sm:h-[32rem] sm:w-[32rem]"

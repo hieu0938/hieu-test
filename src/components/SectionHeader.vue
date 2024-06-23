@@ -5,7 +5,7 @@ defineProps({
 </script>
 
 <template>
-  <img alt="flower" src="hieu-test/sec-title-flower.png" />
+  <img alt="flower" src="/sec-title-flower.png" />
   <div class="pb-4 text-center font-dancing text-5xl md:text-6xl">
     {{ title }}
   </div>
