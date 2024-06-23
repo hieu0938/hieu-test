@@ -22,14 +22,20 @@ const modules = [Pagination, Navigation, EffectFade, Autoplay];
         delay: 2500,
         disableOnInteraction: false,
       }"
-      class="z-0 max-h-[800px] min-h-[600px] opacity-70"
+      class="z-0 max-h-[900px] min-h-[600px] opacity-70"
     >
       <swiper-slide v-for="index in [1, 2]" :key="index">
-        <img
-          :alt="index"
-          :src="`./carousel-${index}.jpg`"
-          class="block min-h-[600px] object-cover"
-        />
+        <picture>
+          <source
+            :srcset="`./carousel-${index}.jpg`"
+            type="image/webp"
+          />
+          <img
+            :alt="index"
+            :src="`./carousel-${index}.jpg`"
+            class="block min-h-[600px] max-h-[600px] w-full object-cover"
+          />
+        </picture>
       </swiper-slide>
     </swiper>
     <div
@@ -39,11 +45,11 @@ const modules = [Pagination, Navigation, EffectFade, Autoplay];
         <div
           class="flex flex-col items-center justify-center gap-2 pb-6 font-dancing text-5xl sm:flex-row lg:text-6xl xl:text-6xl"
         >
-          <div>Thu Thủy</div>
+          <div>A</div>
           <div>
             <HeartIcon class="h-8 w-8 text-rose-400 sm:h-10 sm:w-10" />
           </div>
-          <div>Thanh Tùng</div>
+          <div>B</div>
         </div>
         <div class="text-md text-center font-poppins lg:text-lg xl:text-xl">
           <span class="tracking-tighter">&#x2015;&#x2015;</span>

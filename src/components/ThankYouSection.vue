@@ -18,7 +18,7 @@ import { DevicePhoneMobileIcon } from "@heroicons/vue/24/outline";
   >
     <DevicePhoneMobileIcon class="mb-1 h-5 w-5 text-red-400" />
     <p class="mr-2 font-comfort text-sm md:text-lg">
-      LH: Tùng - 096.860.7430, Thủy - 032.841.7937
+      LH: A - xxx.yyy.zzzz, B - xxx.yyy.zzzz
     </p>
   </div>
 </template>
