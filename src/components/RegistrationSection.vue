@@ -1,30 +1,30 @@
 <script setup>
-import { computed, ref } from "vue";
-import SectionHeader from "./SectionHeader.vue";
+// import { computed, ref } from "vue";
+// import SectionHeader from "./SectionHeader.vue";
 
-import { register } from "../scripts/api.js";
+// import { register } from "../scripts/api.js";
 
-const registration = ref({
-  name: "",
-  phoneNumber: "",
-  count: 1,
-  bride: false,
-  groom: false,
-});
+// const registration = ref({
+//   name: "",
+//   phoneNumber: "",
+//   count: 1,
+//   bride: false,
+//   groom: false,
+// });
 
-const isSuccessfulRequest = ref(false);
-const isValidForm = computed(() => {
-  return (
-    registration.value.name.length > 0 &&
-    registration.value.phoneNumber.length > 0 &&
-    registration.value.count > 0 &&
-    (registration.value.bride || registration.value.groom)
-  );
-});
+// const isSuccessfulRequest = ref(false);
+// const isValidForm = computed(() => {
+//   return (
+//     registration.value.name.length > 0 &&
+//     registration.value.phoneNumber.length > 0 &&
+//     registration.value.count > 0 &&
+//     (registration.value.bride || registration.value.groom)
+//   );
+// });
 
-const submit = async () => {
-  isSuccessfulRequest.value = await register(registration.value);
-};
+// const submit = async () => {
+//   isSuccessfulRequest.value = await register(registration.value);
+// };
 </script>
 
 <template>
