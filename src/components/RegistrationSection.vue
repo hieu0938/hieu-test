@@ -9,7 +9,7 @@ const registration = ref({
   bride: false,
   groom: false,
 });
-1
+
 const isSuccessfulRequest = ref(false);
 const isValidForm = computed(() => {
   return (
@@ -20,6 +20,35 @@ const isValidForm = computed(() => {
   );
 });
 
+const submit = async () => {
+  const url = 'https://script.google.com/macros/s/AKfycbyrqazBxDhTcDWzot7gnIHLRR0i9mhFtZpWDxEcmlFhCokypc7U07jhXPrugWX1MoqYCg/exec'; 
+
+  const formData = {
+    name: registration.value.name,
+    phoneNumber: registration.value.phoneNumber,
+    count: registration.value.count,
+    bride: registration.value.bride,
+    groom: registration.value.groom,
+  };
+
+  try {
+    const response = await fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    });
+
+    if (response.ok) {
+      isSuccessfulRequest.value = true;
+    } else {
+      console.error('Failed to submit the form');
+    }
+  } catch (error) {
+    console.error('An error occurred while submitting the form:', error);
+  }
+};
 </script>
 
 <template>
