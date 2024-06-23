@@ -1,8 +1,8 @@
 <script setup>
-// import { computed, ref } from "vue";
-// import SectionHeader from "./SectionHeader.vue";
+import { computed, ref } from "vue";
+import SectionHeader from "./SectionHeader.vue";
 
-// import { register } from "../scripts/api.js";
+import { register } from "../scripts/api.js";
 
 // const registration = ref({
 //   name: "",
