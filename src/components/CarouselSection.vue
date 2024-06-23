@@ -27,7 +27,7 @@ const modules = [Pagination, Navigation, EffectFade, Autoplay];
       <swiper-slide v-for="index in [1, 2]" :key="index">
         <img
           :alt="index"
-          :src="`/carousel-${index}.jpg`"
+          :src="`hieu-test/carousel-${index}.jpg`"
           class="block min-h-[600px] object-cover"
         />
       </swiper-slide>

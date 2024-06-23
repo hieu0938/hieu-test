@@ -30,7 +30,7 @@ function toggleNavBarSticky() {
       <div
         class="flex flex-row items-center justify-center gap-1 font-dancing font-bold"
       >
-        <img class="h-9 w-9" alt="happy" src="/happiness.png" />
+        <img class="h-9 w-9" alt="happy" src="hieu-test/happiness.png" />
       </div>
       <button
         class="inline-flex h-8 w-8 items-center justify-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 md:hidden"

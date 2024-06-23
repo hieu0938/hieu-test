@@ -16,7 +16,7 @@
           <div class="pt-7 text-center font-comfort text-xl">
             Mừng cưới {{ item == 1 ? "chú rể" : "cô dâu" }}
           </div>
-          <img :alt="`q${1}`" :src="`/qr-${item}.jpg`" class="rounded-xl" />
+          <img :alt="`q${1}`" :src="`hieu-test/qr-${item}.jpg`" class="rounded-xl" />
         </div>
       </div>
     </div>
