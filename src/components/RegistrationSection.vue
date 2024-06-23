@@ -2,8 +2,6 @@
 import { computed, ref } from "vue";
 import SectionHeader from "./SectionHeader.vue";
 
-import { register } from "../scripts/api.js";
-
 const registration = ref({
   name: "",
   phoneNumber: "",
@@ -11,7 +9,7 @@ const registration = ref({
   bride: false,
   groom: false,
 });
-
+1
 const isSuccessfulRequest = ref(false);
 const isValidForm = computed(() => {
   return (
@@ -22,9 +20,6 @@ const isValidForm = computed(() => {
   );
 });
 
-const submit = async () => {
-  isSuccessfulRequest.value = await register(registration.value);
-};
 </script>
 
 <template>
