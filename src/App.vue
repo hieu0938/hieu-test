@@ -23,7 +23,7 @@
     <div id="fb-root"></div>
     <div class="fb-customerchat"
       attribution="setup_tool"
-      page_id="https://www.facebook.com/profile.php?id=61569021716514"
+      page_id="61569021716514"
       theme_color="#0084ff"
       logged_in_greeting="Chào bạn! Chúng tôi có thể giúp gì cho bạn?"
       logged_out_greeting="Vui lòng đăng nhập để trò chuyện với chúng tôi.">
