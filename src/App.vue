@@ -19,10 +19,15 @@
       <ThankYouSection />
     </section>
 
-    <!-- Chat Button -->
-    <button class="chat-button" @click="openChat">
-      Chat with us
-    </button>
+    <!-- Chatfuel Messenger Button -->
+    <div id="fb-root"></div>
+    <div class="fb-customerchat"
+      attribution="setup_tool"
+      page_id="https://www.facebook.com/profile.php?id=61569021716514"
+      theme_color="#0084ff"
+      logged_in_greeting="Chào bạn! Chúng tôi có thể giúp gì cho bạn?"
+      logged_out_greeting="Vui lòng đăng nhập để trò chuyện với chúng tôi.">
+    </div>
 
     <!-- Chatfuel Script -->
     <script id="6738b4b97ce5457598f9ba30" src="https://dashboard.chatfuel.com/integration/entry-point.js" async defer></script>
@@ -56,11 +61,6 @@ onMounted(() => {
   changeLocationHash();
   window.addEventListener("scroll", changeLocationHash);
 });
-
-// Hàm mở chat khi click vào button (Chức năng mở Chatfuel)
-function openChat() {
-  window.Chatfuel.open();  // Gọi Chatfuel chatbot
-}
 </script>
 
 <style scoped>
@@ -70,7 +70,7 @@ function openChat() {
   bottom: 20px;
   right: 20px;
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #0084ff;
   color: white;
   border: none;
   border-radius: 5px;
