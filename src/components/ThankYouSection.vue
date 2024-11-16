@@ -22,15 +22,3 @@ import { DevicePhoneMobileIcon } from "@heroicons/vue/24/outline";
     </p>
   </div>
 </template>
-<script setup>
-onMounted(() => {
-  const script = document.createElement('script');
-  script.src = 'https://dashboard.chatfuel.com/integration/entry-point.js';
-  script.id = '6738b4b97ce5457598f9ba30';
-  script.async = true;
-  script.defer = true;
-  document.head.appendChild(script);
-});
-</script>
-
-<style scoped></style>
